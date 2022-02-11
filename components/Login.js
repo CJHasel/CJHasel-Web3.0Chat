@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
-import Loading from "./Loading";
+import DogeLogo from "../Images/DogeLogo.png";
 
 function Login() {
   const { authenticate } = useMoralis();
@@ -10,7 +10,7 @@ function Login() {
       <h1>I am the login screen</h1>
       <div className="flex flex-col absolute z-50 h-4/6 items-center justify-center w-full space-y-4">
         <Image
-          src="	https://assets.stickpng.com/images/5a521f522f93c7a8d5137fc7.png"
+          src={DogeLogo}
           width={200}
           height={200}
           className="object-cover rounded-full"
