@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
-import DogeLogo from "../Images/DogeLogo.png";
+import nft from "../Images/nft.png";
 
 function Login() {
   const { authenticate } = useMoralis();
@@ -10,7 +10,7 @@ function Login() {
       <h1>I am the login screen</h1>
       <div className="flex flex-col absolute z-50 h-4/6 items-center justify-center w-full space-y-4">
         <Image
-          src={DogeLogo}
+          src={nft}
           width={200}
           height={200}
           className="object-cover rounded-full"
@@ -20,7 +20,7 @@ function Login() {
           onClick={authenticate}
           className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse"
         >
-          Login to Web3.0
+          Login to the SimpleVerse
         </button>
       </div>
 

@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./components/Login.js"],
+  content: ["./components/**/*.{html,js}", "./pages/**/*.{html,js}"],
   theme: {
     extend: {},
   },
